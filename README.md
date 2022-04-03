@@ -55,4 +55,39 @@ RDI is calculated for each airport and assigned to the flight. The flight divert
 RDI = 1/(c + available flight parking spaces – parking spaces in use )
 c = constant added to avoid zero division error
 
+## MODEL:
+
+We create a model for Delhi airport and all alternative airports simulating the different processes at the airport including the actual runways and parking space. According to the strategies discussed above , the priority of new destination is chosen based on divergence risk index, utilization of runways and capacity to accommodate or park aircrafts. In our model, we run the simulation and based on the results we devise the optimal strategy. The objective is to decide the best strategy to follow to enable route diversion while considering minimisation of delay and wait times.
+
+## Data Obtained:
+
+The data obtained from the internet suggests that the Landing process takes 1-5 minutes, so we use the triangular distribution TRIA(1,3,5) minutes for the process. As the capacity for landing is different for different airports we change the resource capacity accordingly. We combine the de-boarding, Refuelling, Technical inspection, On-boarding etc. process which take place at Bays of the Airport as a single process. This estimate is taken from the data found on the various websites related to aviation.
+Delhi Airport is the busiest airport in India. From amongst the alternate airports , Jaipur is the busiest , followed by Chandigarh and Dehradun
+
+Jaipur Airport : 1 runway , Parking Capacity – 15 , Emergency Landing Capacity – 7					 Inter-arrival time – TRIA(20,35,40) , Parking / Maintainance time – TRIA(20,25,30) ,
+		Time for Arrival or Departure on runway – TRIA(1,3,5) minutes
+
+
+Chandigarh Airport : 1 runway , Parking Capacity – 15 , Emergency Landing Capacity – 7
+			Inter-arrival time – TRIA(20,40,60) , Parking / Maintainance time – TRIA(20,30,40) ,
+			Time for Arrival or Departure on runway – TRIA(1,3,5) minutes
+
+Dehradun Airport :     1 runway, Parking Capacity – 10, Emergency Landing Capacity – 5 
+			Inter-arrival time – TRIA(30,40,60) , Parking / Maintainance time – TRIA(20,30,40) ,
+			Time for Arrival or Departure on runway – TRIA(1,3,5) minutes
+
+## Objective:
+
+1)	Analyzing the proposed initial strategy for 
+
+2)	Finding an optimal preference policy of airports for diversion.
+
+Assumption : Most of the flights going to Delhi land there itself , but due to foggy climate and low visibility , the time taken to carry out normal operations takes longer. Hence, due to delay  in operations  only 10%-30% of the flights have to be diverted to alternate airports.
+
+### Model: 
+All the flights which are unable to land at Delhi airport due to constraints are assigned a Risk Diversion Index for possible flight to all three airports based on their current resource availability. Then , depending on the status of runway utilization and airplane accommodation capacity the flights choose the alternate airport to divert to. However , if none of the airports are available , then an emergency landing has to be made to one of the diversion airports , based on DRI.
+ If parking capacity of hangar is satisfied , then there is no need to take DRI into consideration. However, if emergency landing is to be made , then DRI needs to be considered to see the effect it might have on the normal schedule of the airport.
+.
+Moreover , if  emergency landing can’t be made currently , then those flights are made to fly for a few additional hours , till the constraints on DRI and runway status are satisfied. All flights have extra fuel reserved in their takers which enables them to fly for longer periods than their route. This way all the flights can be diverted to the airports.
+
 
