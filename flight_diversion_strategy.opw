@@ -1,0 +1,59 @@
+[RESOURCES]
+Runway 8by26
+Runway 9by27
+Parking Lot Chandigarh
+runway chandigarh
+Runway 3by66 chandigarh
+Runway 15by33
+Parking Lot
+Parking Lot dehradun
+[VARIABLES]
+Runway 15 by 33.VATime
+Departure from Jaipur.WaitTime
+Decide 1.NumberOut False
+Flights Going To Dehra Dun.NumberOut
+Parking in Chandigarh.WaitTime
+Runway Chandigarh.VATime
+Runway 15 by 33.NumberIn
+Dispose 2.NumberOut
+Departure from Dehradun.WaitTime
+Parking in Chandigarh.VATime
+Runway 15 by 33.NumberOut
+Parking in Chandigarh.NumberIn
+Parking in Jaipur.NumberOut
+Departure from Chandigarh.NumberOut
+Departure from Dehradun.NumberOut
+Parking in Chandigarh.NumberOut
+Parking in Jaipur.NumberIn
+Departure from Chandigarh.NumberIn
+Departure from Dehradun.NumberIn
+Parking in Dehra Dun.VATime
+Runway 8 by 26.NumberOut
+Runway 9 by 27.NumberOut
+Runway 8 by 26.NumberIn
+Runway 9 by 27.NumberIn
+Parking in Jaipur.VATime
+Parking in Dehra Dun.WaitTime
+Dispose 1.NumberOut
+Dispose 4.NumberOut
+Flights Going To Delhi.NumberOut
+Flights Going To Chandigarh.NumberOut
+Parking in Dehra Dun.NumberOut
+Flights Going To Jaipur.NumberOut
+Departure from Chandigarh.WaitTime
+Departure from Dehradun.VATime
+Runway 8 by 26.VATime
+Runway 9 by 27.VATime
+Departure from Jaipur.NumberIn
+Runway Chandigarh.WaitTime
+Departure from Jaipur.NumberOut
+Runway 8 by 26.WaitTime
+Runway 9 by 27.WaitTime
+Departure from Jaipur.VATime
+Runway 15 by 33.WaitTime
+Parking in Dehra Dun.NumberIn
+Departure from Chandigarh.VATime
+Parking in Jaipur.WaitTime
+Runway Chandigarh.NumberOut
+Decide 1.NumberOut True
+Runway Chandigarh.NumberIn
