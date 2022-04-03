@@ -90,4 +90,49 @@ All the flights which are unable to land at Delhi airport due to constraints are
 .
 Moreover , if  emergency landing can’t be made currently , then those flights are made to fly for a few additional hours , till the constraints on DRI and runway status are satisfied. All flights have extra fuel reserved in their takers which enables them to fly for longer periods than their route. This way all the flights can be diverted to the airports.
 
+## Results:
+
+We can observe that the average wait time for parking of a flight is highest in Chandigarh followed by Jaipur and Dehradun. This means the parking space in Chandigarh is very busy and accommodating the diverted flights from Delhi makes the parking system more clogged up and thus , the high wait time is observed.  Average waiting time in Jaipur and Dehradun is quite same implying that utilization of parking space is quite similar.
+From above graphs , it can be seen that all parking spaces are busy for most time of the day
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+From above results , it is inferred that Chandigarh airport has highest no. of  planes in queue due to higher wait time as seen earlier. Although Dehradun has similar no. of planes in queue , its wait time is lower due to faster maintenance and its busy schedule.
+Moreover we can see that 14 planes on an average need to fly for additional duration due to non-availability of parking or runway resources during emergency landing.
+We can observe below that Parking in Chandigarh is heavily utilized almost completely, followed by Dehradun and Jaipur.
+
+## Inference and Conclusion:
+
+1.	Most of the diverted flights go to Jaipur followed by Chandigarh and then Dehradun.
+2.	Runway Utilization of Chandigarh is highest and average wait time is also very high , hence it should not be given much priority while choosing airport for diverging route.
+3.	Runway Utilization of Dehradun is high and wait time is smaller as compared to Chandigarh , hence it is more preferable than Chandigarh airport
+4.	Although Chandigarh and Dehradun are less busy in comparison to Jaipur , their runway utilization and wait time is high. This is because of the higher time taken during parking and maintenance and lack of resources to accommodate a large no. of diverted flights.
+5.	Jaipur airport is the most preferred destination due to comparatively lower runway utilization, hence waiting time is lower. Although Jaipur is one of the most busiest airports in India still most planes diverted there. This is result of the fast maintenance and post landing activities , which allow accommodation of more planes.
+6.	Thus the priority for divergence suggested after inference from above results is – Jaipur, Dehradun, Chandigarh. The priority suggested can be overridden at times depending on the diversion risk index at the moment. 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
